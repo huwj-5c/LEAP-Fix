@@ -102,7 +102,7 @@ function Acrobat-IntegrationFix {
 # --- LEAP Installer ---
 function Install-LEAP {
     Request-AdminPrivileges
-    $installerUrl = "https://github.com/huwj-5c/LEAP-Fix/raw/refs/heads/main/LEAPDesktopX64Setup.exe"
+    $installerUrl = "https://leaphome.sharepoint.com/:u:/s/MatterInformationSheets/IQA4uDoeshErRJJzDdM0u084AbjMFbq00RTzOu9cLskgm4o?download=1"
     $installerPath = "$env:TEMP\LEAPDesktopX64Setup.exe"
     
     Write-Log "Connecting to 5C GitHub for latest installer..." "Cyan"
