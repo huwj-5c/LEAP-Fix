@@ -102,10 +102,10 @@ function Acrobat-IntegrationFix {
 # --- LEAP Installer ---
 function Install-LEAP {
     Request-AdminPrivileges
-    $installerUrl = "https://github.com/Hebbins/LEAP-Fix/raw/main/LEAPDesktopX64Setup.exe"
+    $installerUrl = "https://github.com/huwj-5c/LEAP-Fix/raw/refs/heads/main/LEAPDesktopX64Setup.exe"
     $installerPath = "$env:TEMP\LEAPDesktopX64Setup.exe"
     
-    Write-Log "Connecting to GitHub for latest installer..." "Cyan"
+    Write-Log "Connecting to 5C GitHub for latest installer..." "Cyan"
     [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
     try {
         Invoke-WebRequest -Uri $installerUrl -OutFile $installerPath
@@ -146,7 +146,7 @@ function PrinterFix {
 
 # --- MAIN INTERFACE ---
 Clear-Host
-Write-Host "=================================== [ LEAP TOOLBOX ] ==================================="
+Write-Host "=================================== [ 5C Services Ltd - LEAP TOOLBOX ] ==================================="
 Write-Host "(I)nstall LEAP           - Requires Admin"
 Write-Host "(U)ninstall LEAP         - Cleans User AppData THEN requests Admin"
 Write-Host "(B)oth (Reinstall)       - Performs full clean and fresh install"
